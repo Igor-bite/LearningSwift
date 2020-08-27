@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project22" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L5U-pr-eRA">
+                                <rect key="frame" x="79" y="320" width="256" height="256"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="256" id="czI-0w-z3z"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="256" id="lbC-ho-Owm"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UNKNOWN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyg-j0-sdF">
+                                <rect key="frame" x="111" y="429" width="192" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2y-5c-5XU">
+                                <rect key="frame" x="0.0" y="793" width="414" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="XP7-0W-FKE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="s2y-5c-5XU" firstAttribute="centerX" secondItem="L5U-pr-eRA" secondAttribute="centerX" id="J9K-6F-EdQ"/>
+                            <constraint firstItem="s2y-5c-5XU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PvU-pF-DXk"/>
+                            <constraint firstItem="L5U-pr-eRA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XWG-Uj-uiA"/>
+                            <constraint firstItem="s2y-5c-5XU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZjY-ey-uvm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s2y-5c-5XU" secondAttribute="trailing" id="eFX-fA-dll"/>
+                            <constraint firstItem="fyg-j0-sdF" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="j1m-0S-Sku"/>
+                            <constraint firstItem="L5U-pr-eRA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kcZ-au-zuu"/>
+                            <constraint firstItem="fyg-j0-sdF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oGD-iI-Mw9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="s2y-5c-5XU" secondAttribute="bottom" constant="24" id="yRx-RL-kw6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="beaconName" destination="s2y-5c-5XU" id="bwP-3O-nbl"/>
+                        <outlet property="distanceReading" destination="fyg-j0-sdF" id="alX-6d-PRX"/>
+                        <outlet property="locatorCircle" destination="L5U-pr-eRA" id="vGO-eo-N0B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
